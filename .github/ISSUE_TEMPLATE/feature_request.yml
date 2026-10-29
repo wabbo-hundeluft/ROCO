@@ -1,0 +1,15 @@
+name: Feature request
+description: Describe a concrete user problem and useful outcome.
+title: "[Feature] "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to understand or do?
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Proposed behavior and alternatives
+      description: Please avoid sharing personal health information.

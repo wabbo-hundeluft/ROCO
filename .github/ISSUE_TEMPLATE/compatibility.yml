@@ -1,0 +1,30 @@
+name: Pixel Watch / data compatibility
+description: Report which records reach ROCO and which are missing.
+title: "[Compatibility] "
+body:
+  - type: markdown
+    attributes:
+      value: "Report data types and behavior, not your actual health measurements or account details."
+  - type: input
+    id: device
+    attributes:
+      label: Phone/watch model, Android and companion-app version
+    validations:
+      required: true
+  - type: input
+    id: app
+    attributes:
+      label: ROCO version and selected connector
+    validations:
+      required: true
+  - type: textarea
+    id: records
+    attributes:
+      label: Records available in the source vs records missing in ROCO
+      description: For example, sleep stages or RMSSD HRV; no personal values needed.
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Permissions checked, steps and redacted result

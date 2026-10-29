@@ -1,0 +1,62 @@
+{
+  "recorded_at_utc": "2026-10-29T21:04:17.310596+00:00",
+  "scope": "GitHub connector first page, up to 50 results, before SEO metadata update. Not a global/web rank.",
+  "results": [
+    {
+      "query": "android sleep HRV recovery in:name,description,topics",
+      "returned": 50,
+      "roco_position": 4,
+      "status": "ok",
+      "window": 50
+    },
+    {
+      "query": "whoop alternative in:name,description,topics",
+      "returned": 19,
+      "roco_position": null,
+      "status": "ok",
+      "window": 50
+    },
+    {
+      "query": "whoop alternative pixel watch in:name,description,topics",
+      "returned": 0,
+      "roco_position": null,
+      "status": "ok",
+      "window": 50
+    },
+    {
+      "query": "pixel watch recovery score in:name,description,topics",
+      "returned": 1,
+      "roco_position": null,
+      "status": "ok",
+      "window": 50
+    },
+    {
+      "query": "body battery pixel watch in:name,description,topics",
+      "returned": 1,
+      "roco_position": null,
+      "status": "ok",
+      "window": 50
+    },
+    {
+      "query": "google health score in:name,description,topics",
+      "returned": 50,
+      "roco_position": null,
+      "status": "ok",
+      "window": 50
+    },
+    {
+      "query": "health connect readiness score in:name,description,topics",
+      "returned": 2,
+      "roco_position": null,
+      "status": "ok",
+      "window": 50
+    },
+    {
+      "query": "whoop pixel watch in:readme",
+      "returned": 50,
+      "roco_position": null,
+      "status": "ok",
+      "window": 50
+    }
+  ]
+}

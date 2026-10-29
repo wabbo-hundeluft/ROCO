@@ -1,0 +1,28 @@
+name: Bug report
+description: A reproducible problem using synthetic or redacted information.
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: "Do not include API keys, account identifiers or personal health records. For security issues, read SECURITY.md first."
+  - type: input
+    id: version
+    attributes:
+      label: ROCO version and Android version
+    validations:
+      required: true
+  - type: dropdown
+    id: connector
+    attributes:
+      label: Data connector
+      options:
+        - Google Health
+        - Health Connect
+        - No connector / other
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps, expected result and actual result
+      description: Include the displayed error text with secrets and personal values removed.
+    validations:
+      required: true

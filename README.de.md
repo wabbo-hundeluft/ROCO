@@ -1,6 +1,8 @@
-# ROCO — persönliche Scores und KI-Coaching für Google Health
+# ROCO — Pixel-Watch-Scores, Erholung und KI-Coach für Android
 
-**Mach aus deinen Google-Health-Daten verständliche Scores, visuelle Auswertungen und persönliches KI-Coaching.** ROCO ist dein Android-Begleiter für Körperenergie, Schlaf, HRV, Erholung und Wochenbelastung — damit du deine Werte verstehst und deinen Alltag besser planen kannst.
+**Du hast eine Pixel Watch und möchtest WHOOP-ähnliche Einblicke ohne ein weiteres Wearable?** ROCO ist eine native Android-App, die verfügbare Google-Health- oder Health-Connect-Daten in eigene Körperenergie-, Schlaf- und adaptive Wochenbelastungs-Schätzungen übersetzt. Ein optionaler KI-Robotercoach erklärt Verläufe und hilft beim Planen von Training und Ruhe.
+
+**Open Source · Apache 2.0 · Android ab 9 · Vorschau-APK 2.0.20**
 
 <p align="center">
   <a href="https://github.com/wabbo-hundeluft/ROCO/releases/download/v2.0.20/ROCO-2.0.20.apk"><img alt="APK herunterladen" src="https://img.shields.io/badge/APK_herunterladen-2.0.20-2E7D58?style=for-the-badge&amp;logo=android&amp;logoColor=white"></a>
@@ -21,6 +23,14 @@ Google Health ist die bevorzugte eingerichtete Datenverbindung; **Health Connect
 ROCO ist eine unabhängige App, kein offizielles Google-Produkt und nicht mit Google verbunden.
 
 [English README](README.md)
+
+## Eine WHOOP-Alternative für Pixel-Watch-Nutzer?
+
+ROCO kann einen Teil des Bedürfnisses nach Schlaf-, Erholungs- und Belastungseinordnung mit vorhandenen Uhrendaten abdecken. Es bildet weder WHOOPs Hardware noch proprietäre Scores oder sämtliche Funktionen nach. Körperenergie ist nicht Garmin Body Battery; **100 Wochenbelastungspunkte bedeuten das persönliche Wochenziel**, nicht perfekte Gesundheit. Die Skalen sind nicht direkt vergleichbar.
+
+**Kann:** eigene lokale Scores, persönliche Verläufe, Trainingspläne, Logbuch und optionalen KI-Kontext verarbeiten. **Kann nicht garantieren:** alle Daten auf jeder Pixel Watch, Google-Health-Zugang für jedes Konto, Diagnosen oder vollständige WHOOP-Parität. Der eigene Quellcode ist unter Apache 2.0 verfügbar; fremde Bestandteile behalten ihre Lizenzen. Der öffentliche APK-Download verlangt keine Zahlung an ROCO; externe KI kann kostenpflichtig sein.
+
+[Website](https://wabbo-hundeluft.github.io/ROCO/de/) · [WHOOP-Vergleich](https://wabbo-hundeluft.github.io/ROCO/de/whoop-alternative-pixel-watch/) · [Kompatibilität & Daten](https://wabbo-hundeluft.github.io/ROCO/de/compatibility/) · [Score-Erklärungen](https://wabbo-hundeluft.github.io/ROCO/de/how-roco-scores-work/) · [Datenschutz](https://wabbo-hundeluft.github.io/ROCO/de/privacy/) · [FAQ](https://wabbo-hundeluft.github.io/ROCO/de/faq/)
 
 ## Einblicke in die App
 

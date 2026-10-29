@@ -1,8 +1,10 @@
 <p align="center"><img src="assets/roco.png" alt="ROCO robot health and fitness coach for Android" width="160"></p>
 
-# ROCO — personal scores & AI coaching for Google Health
+# ROCO — Pixel Watch health scores, recovery insights & AI coach for Android
 
-**Turn your Google Health data into understandable scores, visual insights, and a personal AI coach.** ROCO is a native Android companion that helps you understand your body energy, sleep, HRV, recovery, and weekly training strain — and decide what to do next.
+**Already have a Pixel Watch and want WHOOP-like insights without buying another wearable?** ROCO is a native Android companion that interprets available Google Health or Health Connect data as its own body-energy, sleep and adaptive weekly-training-strain estimates. An optional AI robot coach helps explain trends and plan training and rest.
+
+**Open source · Apache 2.0 · Android 9+ · Preview APK 2.0.20**
 
 <p align="center">
   <a href="https://github.com/wabbo-hundeluft/ROCO/releases/download/v2.0.20/ROCO-2.0.20.apk"><img alt="Download Android APK" src="https://img.shields.io/badge/Download_APK-2.0.20-2E7D58?style=for-the-badge&amp;logo=android&amp;logoColor=white"></a>
@@ -23,6 +25,14 @@ Google Health is the preferred configured data connection; **Health Connect is t
 ROCO is an independent app, not an official Google product or affiliated with Google.
 
 **English · Deutsch · Français · Español** · [Deutsch lesen](README.de.md)
+
+## A WHOOP alternative for Pixel Watch owners?
+
+ROCO can address part of the need for sleep, recovery-related and training-load interpretation using existing watch data. It does not replicate WHOOP hardware, proprietary scores or every WHOOP feature. Body energy is not Garmin Body Battery; **100 weekly strain points mean your personal weekly target**, not perfect health. The scales cannot be compared point-for-point.
+
+**Can:** calculate local estimates, compare personal history, support plans and a journal, and optionally explain permitted context with AI. **Cannot guarantee:** every field on every Pixel Watch, Google Health access for all accounts, medical diagnoses or full WHOOP parity. Original source is Apache-2.0; third-party components retain their licenses. The current APK is downloadable without paying ROCO; external AI services can charge.
+
+[Website](https://wabbo-hundeluft.github.io/ROCO/) · [WHOOP comparison](https://wabbo-hundeluft.github.io/ROCO/whoop-alternative-pixel-watch/) · [Compatibility & data](https://wabbo-hundeluft.github.io/ROCO/compatibility/) · [How scores work](https://wabbo-hundeluft.github.io/ROCO/how-roco-scores-work/) · [Privacy](https://wabbo-hundeluft.github.io/ROCO/privacy/) · [FAQ](https://wabbo-hundeluft.github.io/ROCO/faq/)
 
 ## See ROCO in action
 

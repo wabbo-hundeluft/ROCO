@@ -1,0 +1,9 @@
+date_utc,system,language_region,query,search_used,status,roco_mentioned,visible_position,source_url,facts_correct,notes
+2026-10-29T21:04:17.310830+00:00,GitHub connector,unknown,"android sleep HRV recovery in:name,description,topics",yes,ok,True,4,https://github.com/wabbo-hundeluft/ROCO,not_assessed,First returned window only; no ranking improvement asserted
+2026-10-29T21:04:17.310849+00:00,GitHub connector,unknown,"whoop alternative in:name,description,topics",yes,ok,False,,,not_assessed,First returned window only; no ranking improvement asserted
+2026-10-29T21:04:17.310858+00:00,GitHub connector,unknown,"whoop alternative pixel watch in:name,description,topics",yes,ok,False,,,not_assessed,First returned window only; no ranking improvement asserted
+2026-10-29T21:04:17.310865+00:00,GitHub connector,unknown,"pixel watch recovery score in:name,description,topics",yes,ok,False,,,not_assessed,First returned window only; no ranking improvement asserted
+2026-10-29T21:04:17.310871+00:00,GitHub connector,unknown,"body battery pixel watch in:name,description,topics",yes,ok,False,,,not_assessed,First returned window only; no ranking improvement asserted
+2026-10-29T21:04:17.310876+00:00,GitHub connector,unknown,"google health score in:name,description,topics",yes,ok,False,,,not_assessed,First returned window only; no ranking improvement asserted
+2026-10-29T21:04:17.310882+00:00,GitHub connector,unknown,"health connect readiness score in:name,description,topics",yes,ok,False,,,not_assessed,First returned window only; no ranking improvement asserted
+2026-10-29T21:04:17.310888+00:00,GitHub connector,unknown,whoop pixel watch in:readme,yes,ok,False,,,not_assessed,First returned window only; no ranking improvement asserted

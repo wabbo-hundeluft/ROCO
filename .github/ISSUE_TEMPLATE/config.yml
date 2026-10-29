@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Compatibility and setup
+    url: https://wabbo-hundeluft.github.io/ROCO/compatibility/
+    about: Check data, permissions and Google authorization prerequisites first.
+  - name: Security reporting
+    url: https://github.com/wabbo-hundeluft/ROCO/blob/main/SECURITY.md
+    about: Keep vulnerabilities, credentials and health data out of public issues.

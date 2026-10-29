@@ -1,0 +1,4 @@
+# GitHub project Pages: effective robots.txt must be at the HOST root, not /ROCO/.
+User-agent: *
+Allow: /
+Sitemap: https://wabbo-hundeluft.github.io/ROCO/sitemap.xml
