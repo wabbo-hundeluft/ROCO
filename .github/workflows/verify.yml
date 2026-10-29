@@ -7,7 +7,7 @@ on:
 permissions:
   contents: read
 concurrency:
-  group: verify-${{ github.ref }}
+  group: verify-${{ github.ref }}-${{ github.sha }}
   cancel-in-progress: true
 jobs:
   website:
@@ -24,12 +24,30 @@ jobs:
     timeout-minutes: 30
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
-      - uses: actions/setup-java@b843ebf9b913146b38da2eaa7aeddf76074ae1ad # v6.1.0
+        with:
+          fetch-depth: 2
+      - name: Check whether Android inputs changed
+        id: changes
+        shell: bash
+        run: |
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" ]] || ! git rev-parse HEAD^ >/dev/null 2>&1; then
+            echo "android=true" >> "$GITHUB_OUTPUT"
+          elif git diff --name-only HEAD^ HEAD | grep -Eq '^(app/|gradle/|gradlew|build.gradle.kts|settings.gradle.kts|gradle.properties|.github/workflows/)'; then
+            echo "android=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "android=false" >> "$GITHUB_OUTPUT"
+            echo "Documentation-only change: Android build/tests are not rerun."
+          fi
+      - if: steps.changes.outputs.android == 'true'
+        uses: actions/setup-java@b843ebf9b913146b38da2eaa7aeddf76074ae1ad # v6.1.0
         with:
           distribution: temurin
           java-version: '21'
-      - uses: android-actions/setup-android@be39fa834029ff78f1a44aa3bb0819b8fc2bd8fd # v4.0.4
-      - name: Install required Android SDK packages
+      - if: steps.changes.outputs.android == 'true'
+        uses: android-actions/setup-android@be39fa834029ff78f1a44aa3bb0819b8fc2bd8fd # v4.0.4
+      - if: steps.changes.outputs.android == 'true'
+        name: Install required Android SDK packages
         run: sdkmanager 'platforms;android-37.0' 'build-tools;37.0.0' 'platform-tools'
-      - name: Build preview and run ten scoped language/render tests
+      - if: steps.changes.outputs.android == 'true'
+        name: Build preview and run ten scoped language/render tests
         run: ./gradlew :app:assembleDebug :app:testDebugUnitTest -PhealthCoachPreview=true --tests '*LanguageSettingsTest' --tests '*EnglishReadmeScreenshotsTest' --no-daemon --max-workers=1
