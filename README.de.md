@@ -34,7 +34,7 @@ ROCO kann einen Teil des Bedürfnisses nach Schlaf-, Erholungs- und Belastungsei
 
 ## Einblicke in die App
 
-Englische App-Ansichten aus automatisierten UI-Tests mit synthetischen Beispieldaten.
+Englische App-Ansichten aus dem aktuellen Quellcode mit synthetischen Beispieldaten. Einige gezeigte Übersetzungskorrekturen sind neuer als die herunterladbare Vorschau 2.0.20.
 
 <p align="center">
 <img src="assets/screenshots/today.png" width="240" alt="ROCO daily scores and body energy">

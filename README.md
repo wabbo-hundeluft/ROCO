@@ -36,7 +36,7 @@ ROCO can address part of the need for sleep, recovery-related and training-load 
 
 ## See ROCO in action
 
-English app screens rendered by automated UI tests with synthetic demo data.
+English app screens rendered from current source by automated UI tests with synthetic demo data. Some translation corrections shown here are newer than the downloadable 2.0.20 preview.
 
 <p align="center">
 <img src="assets/screenshots/today.png" width="240" alt="ROCO daily scores and body energy">

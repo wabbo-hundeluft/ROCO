@@ -31,7 +31,7 @@ A crawler reads robots policy from **https://wabbo-hundeluft.github.io/robots.tx
 
 - A 20–30 second demo needs a current real recording or reproducible full animation capture; the still-image gallery is not labelled as a video.
 - A dedicated production signing policy and secure signing setup need a separate release task. Existing preview checksums remain valid.
-- CI is now configured in `.github/workflows/verify.yml`. Website generation/checks have passed on GitHub. The first Android job failed because the SDK package is named `platforms;android-37.0`, not `platforms;android-37`; this is corrected. The new Android job is still running at this checkpoint. No full-suite pass is claimed.
+- CI is now configured in `.github/workflows/verify.yml`. Website generation/checks have passed on GitHub. The first Android job failed because the SDK package is named `platforms;android-37.0`, not `platforms;android-37`; this is corrected. The corrected workflow completed successfully in https://github.com/wabbo-hundeluft/ROCO/actions/runs/40956108254 : debug APK build and ten scoped language/render tests passed. No full-suite pass is claimed. Later documentation-only changes skip Android rebuilds.
 - Recruit 2–5 consenting testers and publish only non-identifying device/source compatibility results. The matrix describes implementation scope rather than unperformed tests.
 - Discussions can be enabled when there is a moderation commitment; it is not required for search discovery.
 - F-Droid eligibility needs its own dependency review (including Google Play services). No listing or eligibility is promised.
@@ -47,4 +47,8 @@ Useful references reviewed 2026-10-29:
 
 ## Deployment evidence
 
-GitHub Pages is enabled from `main` / `/docs`. All 14 canonical sitemap pages returned HTTP 200 after deployment. Description, homepage and 18 topics are applied. The repository social preview references the uploaded robot/app social card. The effective origin `/robots.txt` returned 404, not a crawl prohibition. Google Search Console URL-prefix setup has started; its public HTML verification file is included. Ownership verification and sitemap submission still need their returned success state. Bing sign-in is in progress.
+GitHub Pages is enabled from `main` / `/docs`. All 14 canonical sitemap pages returned HTTP 200 after deployment. Description, homepage and 18 topics are applied. The repository social preview references the uploaded robot/app social card. The effective origin `/robots.txt` returned 404, not a crawl prohibition. Google Search Console URL-prefix setup has started; its public HTML verification file is included. Google returned ownership verified and sitemap submitted. The first sitemap-read state was “could not fetch”; the exact submitted URL was confirmed as `/ROCO/sitemap.xml`, and public HTTP/content-type/XML checks succeeded. It was submitted once more with its full URL; no successful Google crawl/indexing is asserted. Bing returned successful site verification using its public XML file. Bing’s first sitemap submission returned an unexpected server-side error; one retry was sent, but its final result could not be observed. Further browser access to Google Search Console and Bing was declined in the origin approval gate; no alternate access path was used. Final search-engine crawl/submission status remains open.
+
+## Completion boundary
+
+The technical website/repository discovery foundation is live. Independent AI recommendation tests, actual search impressions, later 30/90-day comparisons, consenting user tests, an actual 20–30 second demo, a production signing process and directory eligibility reviews are not reported as completed. No automatic recurring task or unsolicited community promotion was created.

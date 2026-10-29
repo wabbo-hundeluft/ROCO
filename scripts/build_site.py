@@ -19,7 +19,7 @@ for lang in ('en','de'):
   if slug=='faq':content='<p class="lead">'+('The current Android preview, explained without hidden prerequisites.' if lang=='en' else 'Die aktuelle Android-Vorschau ohne versteckte Voraussetzungen erklärt.')+'</p>'+''.join(f'<section class="faq-item"><h2>{html.escape(q)}</h2><p>{html.escape(a)}</p></section>' for q,a in FAQ[lang])
   for k,v in {'apk':APK,'repo':REPO,'source':SOURCE,'root':'/ROCO/','local':url(lang),'gallery':gallery}.items():content=content.replace('{'+k+'}',v)
   schema={'@context':'https://schema.org','@type':'MobileApplication' if not slug else 'WebPage','name':'ROCO' if not slug else c['title'],'url':canonical,'description':c['description'],'inLanguage':lang}
-  if not slug:schema.update(operatingSystem='Android 9+',applicationCategory='HealthApplication',softwareVersion='2.0.20',license=REPO+'/blob/main/LICENSE',downloadUrl=APK,codeRepository=REPO,image=BASE+'assets/social.png',author={'@type':'Person','name':'wabbo-hundeluft','url':'https://github.com/wabbo-hundeluft'})
+  if not slug:schema.update(operatingSystem='Android 9+',applicationCategory='HealthApplication',softwareVersion='2.0.20',license=REPO+'/blob/main/LICENSE',downloadUrl=APK,sameAs=REPO,image=BASE+'assets/social.png',author={'@type':'Person','name':'wabbo-hundeluft','url':'https://github.com/wabbo-hundeluft'})
   switch=url('de' if lang=='en' else 'en',slug)
   footer='Independent wellness estimates. Not affiliated with Google, WHOOP or Garmin. Not a medical device.' if lang=='en' else 'Unabhängige Wellness-Schätzungen. Keine Verbindung zu Google, WHOOP oder Garmin. Kein Medizinprodukt.'
   text=f'''<!doctype html>
