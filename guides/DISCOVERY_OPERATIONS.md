@@ -31,7 +31,7 @@ A crawler reads robots policy from **https://wabbo-hundeluft.github.io/robots.tx
 
 - A 20–30 second demo needs a current real recording or reproducible full animation capture; the still-image gallery is not labelled as a video.
 - A dedicated production signing policy and secure signing setup need a separate release task. Existing preview checksums remain valid.
-- CI is not claimed to be running merely because test source is public. Set up build/test automation separately with review of runner SDK availability and workflow permissions.
+- CI is now configured in `.github/workflows/verify.yml`. Website generation/checks have passed on GitHub. The first Android job failed because the SDK package is named `platforms;android-37.0`, not `platforms;android-37`; this is corrected. The new Android job is still running at this checkpoint. No full-suite pass is claimed.
 - Recruit 2–5 consenting testers and publish only non-identifying device/source compatibility results. The matrix describes implementation scope rather than unperformed tests.
 - Discussions can be enabled when there is a moderation commitment; it is not required for search discovery.
 - F-Droid eligibility needs its own dependency review (including Google Play services). No listing or eligibility is promised.
@@ -44,3 +44,7 @@ Useful references reviewed 2026-10-29:
 - https://developers.google.com/search/docs/appearance/ai-features
 - https://developers.openai.com/api/docs/bots
 - https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
+
+## Deployment evidence
+
+GitHub Pages is enabled from `main` / `/docs`. All 14 canonical sitemap pages returned HTTP 200 after deployment. Description, homepage and 18 topics are applied. The repository social preview references the uploaded robot/app social card. The effective origin `/robots.txt` returned 404, not a crawl prohibition. Google Search Console URL-prefix setup has started; its public HTML verification file is included. Ownership verification and sitemap submission still need their returned success state. Bing sign-in is in progress.
