@@ -24,6 +24,19 @@ ROCO is an independent app, not an official Google product or affiliated with Go
 
 **English · Deutsch · Français · Español** · [Deutsch lesen](README.de.md)
 
+## See ROCO in action
+
+Actual app screens rendered by automated UI tests with synthetic demo data.
+
+<p align="center">
+<img src="assets/screenshots/today.png" width="240" alt="ROCO daily scores and body energy">
+<img src="assets/screenshots/sleep.png" width="240" alt="Sleep stages and score">
+<img src="assets/screenshots/coach.png" width="240" alt="Animated robot AI coach">
+<img src="assets/screenshots/training.png" width="240" alt="Training plan">
+<img src="assets/screenshots/trends.png" width="240" alt="Personal health trends">
+<img src="assets/screenshots/journal-question.png" width="240" alt="Habit journal">
+</p>
+
 ## Download ROCO for Android
 
 [Download ROCO 2.0.20 for Android](https://github.com/wabbo-hundeluft/ROCO/releases/download/v2.0.20/ROCO-2.0.20.apk) · [All releases](https://github.com/wabbo-hundeluft/ROCO/releases). Install it on your Android phone and allow installation from your chosen browser or file manager when Android asks.
@@ -78,3 +91,31 @@ Scores are transparent local wellness estimates, not medical measurements or cli
 Version 2.0.20 passed 46 targeted automated checks, including language selection, chat continuity, provider fallbacks, morning animations, and keyboard layout. The debug APK build completed successfully. Automated checks do not replace testing every watch, Google account, Android version, or live AI model.
 
 When reporting an issue, include your ROCO version, Android version, data source, and steps to reproduce. Remove API keys and personal health details from screenshots or logs before posting publicly.
+
+## Build from source
+
+The complete Android application, score engines, robot drawing code and tests are in this repository.
+
+Requirements: JDK 21 (or a compatible Android Studio bundled JDK), Android SDK Platform 37, and the SDK tools required by the Android Gradle plugin. Gradle 9.6.0 is provided through the wrapper. Set `ANDROID_HOME` to your SDK path or create an untracked `local.properties` with `sdk.dir`.
+
+```sh
+git clone https://github.com/wabbo-hundeluft/ROCO.git
+cd ROCO
+./gradlew :app:assembleDebug -PhealthCoachPreview=true
+./gradlew :app:testDebugUnitTest -PhealthCoachPreview=true
+```
+
+APK output: `app/build/outputs/apk/debug/app-debug.apk`. Omit the preview property to build package `com.wabbos.healthcoach`; the distributed preview uses `com.wabbos.healthcoach.v2preview`. Your local debug certificate differs from the published APK certificate, so a locally built APK cannot update that APK directly. No signing key is included.
+
+No API keys are needed to compile. Enter optional AI provider keys in the app. Direct Google Health access requires your own eligible Google Cloud Android OAuth configuration matching the package and SHA-1 of your signing certificate; it is not provisioned by cloning this repository.
+
+### Source map
+
+- `app/src/main/`: application, local score algorithms, health connectors, AI providers, Compose screens, robot animation and translations.
+- `app/src/test/`: unit, regression and synthetic UI tests.
+- `android-contract/`: score-engine contract.
+- `gradle/`: pinned dependency catalog and wrapper.
+
+## License
+
+ROCO is open source under the **[Apache License 2.0](LICENSE)**. You may use, modify and redistribute the original project code under that license. Third-party fonts and components retain their own licenses; see [third-party notices](THIRD_PARTY_NOTICES.md).

@@ -1,0 +1,62 @@
+{
+  "case_name": "synthetischer Tag mit kürzerem Schlaf und zwei Bereitschaftssignalen",
+  "note": "Frei erfundene Daten; keine echten Gesundheitsdaten und keine medizinische Aussage.",
+  "as_of": "2025-03-15T12:00:00+00:00",
+  "sleep": {
+    "goal_minutes": 480,
+    "sessions": [
+      {
+        "record_id": "synthetic-sleep-1",
+        "source": "synthetic-wearable",
+        "start": "2025-03-14T22:00:00+00:00",
+        "end": "2025-03-15T06:00:00+00:00",
+        "stages": [
+          {"stage": "LIGHT", "minutes": 210},
+          {"stage": "DEEP", "minutes": 90},
+          {"stage": "REM", "minutes": 60}
+        ]
+      }
+    ],
+    "prior_nights": [
+      {"wake_date": "2025-03-09", "midpoint_minutes": 120, "source": "synthetic-wearable"},
+      {"wake_date": "2025-03-10", "midpoint_minutes": 120, "source": "synthetic-wearable"},
+      {"wake_date": "2025-03-11", "midpoint_minutes": 120, "source": "synthetic-wearable"},
+      {"wake_date": "2025-03-12", "midpoint_minutes": 120, "source": "synthetic-wearable"},
+      {"wake_date": "2025-03-13", "midpoint_minutes": 120, "source": "synthetic-wearable"},
+      {"wake_date": "2025-03-14", "midpoint_minutes": 120, "source": "synthetic-wearable"}
+    ]
+  },
+  "readiness": {
+    "current": {
+      "hrv_rmssd_ms": [
+        {"record_id": "synthetic-hrv-current", "value": 48, "measured_at": "2025-03-14T08:00:00+00:00", "source": "synthetic-wearable"}
+      ],
+      "resting_heart_rate_bpm": [
+        {"record_id": "synthetic-rhr-current", "value": 72, "measured_at": "2025-03-14T08:00:00+00:00", "source": "synthetic-wearable"}
+      ]
+    },
+    "history": {
+      "hrv_rmssd_ms": [
+        {"date": "2025-03-07", "value": 40, "source": "synthetic-wearable"},
+        {"date": "2025-03-08", "value": 40, "source": "synthetic-wearable"},
+        {"date": "2025-03-09", "value": 40, "source": "synthetic-wearable"},
+        {"date": "2025-03-10", "value": 40, "source": "synthetic-wearable"},
+        {"date": "2025-03-11", "value": 40, "source": "synthetic-wearable"},
+        {"date": "2025-03-12", "value": 40, "source": "synthetic-wearable"},
+        {"date": "2025-03-13", "value": 40, "source": "synthetic-wearable"}
+      ],
+      "resting_heart_rate_bpm": [
+        {"date": "2025-03-07", "value": 60, "source": "synthetic-wearable"},
+        {"date": "2025-03-08", "value": 60, "source": "synthetic-wearable"},
+        {"date": "2025-03-09", "value": 60, "source": "synthetic-wearable"},
+        {"date": "2025-03-10", "value": 60, "source": "synthetic-wearable"},
+        {"date": "2025-03-11", "value": 60, "source": "synthetic-wearable"},
+        {"date": "2025-03-12", "value": 60, "source": "synthetic-wearable"},
+        {"date": "2025-03-13", "value": 60, "source": "synthetic-wearable"}
+      ]
+    }
+  },
+  "training": {
+    "sessions": []
+  }
+}

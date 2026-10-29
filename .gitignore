@@ -1,0 +1,27 @@
+# Gradle
+.gradle/
+**/build/
+
+# Android Studio and local machine configuration
+.idea/
+*.iml
+local.properties
+.cxx/
+.externalNativeBuild/
+
+# Signing material and local secrets
+*.jks
+*.keystore
+.env
+.env.*
+
+# Local tooling and private runtime data
+.kotlin/
+.agents/
+.codex/
+.aws/
+client_secret*.json
+google-services.json
+*.apk
+*.aab
+*.log
