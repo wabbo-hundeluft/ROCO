@@ -1,8 +1,26 @@
 <p align="center"><img src="assets/roco.png" alt="ROCO robot health and fitness coach for Android" width="160"></p>
 
-# ROCO — your robot health & fitness companion
+# ROCO — personal scores & AI coaching for Google Health
 
-Understand your **body energy**, **sleep**, **HRV**, and **weekly training strain** with a friendly robot coach. ROCO is a native Android app with visual insights, an adaptive training plan, a personal habit journal, and optional AI coaching.
+**Turn your Google Health data into understandable scores, visual insights, and a personal AI coach.** ROCO is a native Android companion that helps you understand your body energy, sleep, HRV, recovery, and weekly training strain — and decide what to do next.
+
+<p align="center">
+  <a href="https://github.com/wabbo-hundeluft/ROCO/releases/download/v2.0.20/ROCO-2.0.20.apk"><img alt="Download Android APK" src="https://img.shields.io/badge/Download_APK-2.0.20-2E7D58?style=for-the-badge&amp;logo=android&amp;logoColor=white"></a>
+  <a href="https://github.com/wabbo-hundeluft/ROCO/releases"><img alt="All releases" src="https://img.shields.io/badge/All_Releases-ROCO-25392E?style=for-the-badge&amp;logo=github&amp;logoColor=white"></a>
+  <a href="https://github.com/wabbo-hundeluft/ROCO/releases/tag/v2.0.20"><img alt="Release notes" src="https://img.shields.io/badge/Release_Notes-2.0.20-E5A94F?style=for-the-badge&amp;logoColor=white"></a>
+</p>
+
+## What is ROCO for?
+
+Your watch records the measurements. **ROCO adds the interpretation:** locally calculated scores, comparisons with your own history, and optional AI conversations about your health and training data. Ask your robot coach “Why is my energy low today?”, explore what contributed to your sleep score, or discuss your upcoming training plan.
+
+- **Scores for Google Health data:** body energy, sleep and adaptive weekly training strain, explained with charts and contributing measurements.
+- **AI coaching for Google Health data:** discuss available HRV, resting heart rate, sleep, workouts and journal patterns with your named robot coach.
+- **From insight to action:** plan training and rest days, prepare for tonight’s sleep, and track habits in your journal.
+
+Google Health is the preferred configured data connection; **Health Connect is the fallback**. ROCO calculates its own scores rather than displaying official Google scores. AI coaching is optional and uses your own provider API keys.
+
+ROCO is an independent app, not an official Google product or affiliated with Google.
 
 **English · Deutsch · Français · Español** · [Deutsch lesen](README.de.md)
 
