@@ -24,7 +24,7 @@ ROCO ist eine unabhängige App, kein offizielles Google-Produkt und nicht mit Go
 
 ## Einblicke in die App
 
-Beispielansichten aus automatisierten UI-Tests mit synthetischen Daten.
+Englische App-Ansichten aus automatisierten UI-Tests mit synthetischen Beispieldaten.
 
 <p align="center">
 <img src="assets/screenshots/today.png" width="240" alt="ROCO daily scores and body energy">
