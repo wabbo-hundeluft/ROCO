@@ -1,12 +1,30 @@
-# ROCO — dein Gesundheitsbegleiter auf Android
+# ROCO — persönliche Scores und KI-Coaching für Google Health
 
-Ein persönlicher Roboter hilft dir, **Körperenergie, Schlaf, HRV und Wochenbelastung** zu verstehen. ROCO verbindet visuelle Auswertungen mit einem Trainingsplan, einem Gewohnheiten-Logbuch und optionalem KI-Coaching.
+**Mach aus deinen Google-Health-Daten verständliche Scores, visuelle Auswertungen und persönliches KI-Coaching.** ROCO ist dein Android-Begleiter für Körperenergie, Schlaf, HRV, Erholung und Wochenbelastung — damit du deine Werte verstehst und deinen Alltag besser planen kannst.
+
+<p align="center">
+  <a href="https://github.com/wabbo-hundeluft/ROCO/releases/download/v2.0.20/ROCO-2.0.20.apk"><img alt="APK herunterladen" src="https://img.shields.io/badge/APK_herunterladen-2.0.20-2E7D58?style=for-the-badge&amp;logo=android&amp;logoColor=white"></a>
+  <a href="https://github.com/wabbo-hundeluft/ROCO/releases"><img alt="Alle Releases" src="https://img.shields.io/badge/Alle_Releases-ROCO-25392E?style=for-the-badge&amp;logo=github&amp;logoColor=white"></a>
+  <a href="https://github.com/wabbo-hundeluft/ROCO/releases/tag/v2.0.20"><img alt="Neuerungen ansehen" src="https://img.shields.io/badge/Neuerungen-2.0.20-E5A94F?style=for-the-badge&amp;logoColor=white"></a>
+</p>
+
+## Wofür ist ROCO da?
+
+Deine Uhr erfasst die Messwerte. **ROCO hilft dir, sie einzuordnen:** mit lokal berechneten Scores, Vergleichen zu deinem eigenen Verlauf und optionalen KI-Gesprächen über deine Gesundheits- und Trainingsdaten. Frag deinen Roboter etwa „Warum ist meine Energie heute niedrig?“, schau dir die Einflussfaktoren deines Schlafscores an oder besprich deinen Trainingsplan.
+
+- **Scores für Google-Health-Daten:** Körperenergie, Schlaf und adaptive Wochenbelastung mit Diagrammen und erklärten Einflussfaktoren.
+- **KI für deine Google-Health-Daten:** Besprich verfügbare HRV-, Ruhepuls-, Schlaf- und Trainingswerte sowie Logbuchmuster mit deinem selbst benannten Roboter-Coach.
+- **Von der Auswertung zur Planung:** Trainings- und Ruhetage planen, die kommende Nacht vorbereiten und Gewohnheiten im Logbuch verfolgen.
+
+Google Health ist die bevorzugte eingerichtete Datenverbindung; **Health Connect dient als Ersatz**. ROCO berechnet eigene Scores und zeigt keine offiziellen Google-Scores an. Das KI-Coaching ist optional und verwendet deine eigenen Anbieter-API-Keys.
+
+ROCO ist eine unabhängige App, kein offizielles Google-Produkt und nicht mit Google verbunden.
 
 [English README](README.md)
 
 ## APK herunterladen
 
-Öffne **Releases** in diesem Repository und lade **ROCO-2.0.20.apk** herunter. Die Vorschau unterstützt Android 9 / API 28 oder neuer; verfügbare Gesundheitsdaten hängen von Gerät, Apps und Datenverbindung ab.
+[ROCO 2.0.20 als APK herunterladen](https://github.com/wabbo-hundeluft/ROCO/releases/download/v2.0.20/ROCO-2.0.20.apk) · [Alle Releases](https://github.com/wabbo-hundeluft/ROCO/releases). Die Vorschau unterstützt Android 9 / API 28 oder neuer; verfügbare Gesundheitsdaten hängen von Gerät, Apps und Datenverbindung ab.
 
 Die App heißt **ROCO**. Ihr aktuelles Paket lautet `com.wabbos.healthcoach.v2preview`; die APK ist mit einem Entwicklungszertifikat signiert. Ein Update über dieselbe Installation erhält lokale Daten. APKs mit anderem Paket oder anderer Signatur können sie nicht direkt aktualisieren. Die Prüfsumme steht in `SHA256SUMS.txt` bei der Veröffentlichung.
 
